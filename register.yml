@@ -3,7 +3,7 @@
   tasks:
     - name: register host to my satellite
       shell: |
-        yum remove `rpm -qa | grep katello-ca`
+        yum -y remove `rpm -qa | grep katello-ca`
         rpm -Uvh http://satellite.local.net/pub/katello-ca-consumer-latest.noarch.rpm
         subscription-manager register --org=Default_Organization --activationkey=rhel7 --force
       
