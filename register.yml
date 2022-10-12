@@ -3,10 +3,10 @@
   tasks:
     - name: register host to my satellite
       shell:
-      "rpm -Uvh http://satellite.local.net/pub/katello-ca-consumer-latest.noarch.rpm"
+        "rpm -Uvh http://satellite.local.net/pub/katello-ca-consumer-latest.noarch.rpm"
    
   tasks:
     - name: register host to my satellite
       shell:
-      "subscription-manager register --activationkey=rhel7  --organization=Default_Organization"
+        "subscription-manager register --activationkey=rhel7  --organization=Default_Organization"
       
