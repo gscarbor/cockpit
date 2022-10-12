@@ -1,0 +1,4 @@
+collections:
+  # Install a collection from hub.
+  - name: redhat.rhel_system_roles
+    version: 1.2.0
