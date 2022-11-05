@@ -1,8 +1,8 @@
 ---
 - hosts: all
   tasks:
-    - name: see uptime
-      shell: uptime
+    - name: test lint
+      shell: ansible-lint test.yml
       register: out
 
     - debug:
