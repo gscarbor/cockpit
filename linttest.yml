@@ -2,4 +2,4 @@
 - hosts: all
   tasks:
     - name: register host to my satellite
-      shell: /usr/bin/uptime
+      shell: uptime
