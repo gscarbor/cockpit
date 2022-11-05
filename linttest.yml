@@ -3,6 +3,7 @@
   tasks:
     - name: test lint
       shell: ansible-lint /root/test.yml
+      ignore_errors: true
       register: out
 
     - debug:
