@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: test lint
-      shell: /usr/bin/ansible-lint /root/test.yml
+      shell: ansible-lint /root/test.yml
       register: out
 
     - debug:
