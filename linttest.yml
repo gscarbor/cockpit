@@ -1,5 +1,9 @@
----
+--
 - hosts: all
   tasks:
-    - name: register host to my satellite
+    - name: see uptime
       shell: uptime
+      register: out
+
+    - debug:
+        var: out
