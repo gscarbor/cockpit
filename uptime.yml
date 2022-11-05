@@ -3,7 +3,7 @@
   tasks:
     - name: test lint
       shell: uptime
-      register: out
-
-    - debug:
-        var: out
+#      register: out
+#
+#    - debug:
+#        var: out
