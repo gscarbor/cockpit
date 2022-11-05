@@ -8,3 +8,5 @@
 
     - debug:
         var: out.stdout
+    - debug:
+        var: out
