@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: test lint
-      shell: ansible-lint /root/test.yml
+      shell: ansible-lint /root/copy.yml
       ignore_errors: true
       register: out
 
