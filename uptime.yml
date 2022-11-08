@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: test lint
-@      shell: uptime
+#      shell: uptime
 #      register: out
        shell: hostname
 #    - debug:
