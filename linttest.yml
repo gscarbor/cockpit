@@ -6,5 +6,5 @@
       ignore_errors: true
       register: out
 
-    - debug:
-        var: out
+#    - debug:
+#        var: out
