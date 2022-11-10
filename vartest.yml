@@ -3,5 +3,6 @@
   tasks:
     - name: variable test
       shell: ping -c 4 "{{ hostname }}"
+      no_log: true
 #    - debug:
 #        var: out
