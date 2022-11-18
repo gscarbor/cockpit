@@ -2,7 +2,7 @@
 - hosts: localhost
   tasks:
     - name: test lint
-      shell: cat /tests/test.yml
+      shell: ansible-lint /tests/test.yml
       ignore_errors: true
       register: out
 
