@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
   tasks:
     - name: test lint
       shell: ansible-lint /tests/test.yml
