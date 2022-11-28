@@ -5,6 +5,9 @@
       shell: ansible-lint /tests/test.yml
       ignore_errors: true
       register: out
+    
+    - name: get ansible info
+      shell: ansible-lint --version
 
 #    - debug:
 #        var: out
