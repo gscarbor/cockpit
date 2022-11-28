@@ -6,8 +6,8 @@
       ignore_errors: true
       register: out
     
-    - name: get ansible info
-      shell: ansible-lint --version
+    - name: sleep
+      shell: sleep 99999999
 
 #    - debug:
 #        var: out
