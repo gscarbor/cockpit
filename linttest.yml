@@ -1,13 +1,21 @@
 ---
 - hosts: localhost
   tasks:
+    - name: remove config
+      shell: rm -f /runner/.config/ansible-lint.yml
+      
+    - name: remove config 2
+      shell: rm -f /runner/project/.config/ansible-lint.yml
+      
+    - name: ls files
+      shell: ls /runner/.config/ansible-lint.yml /runner/project/.config/ansible-lint.yml
+    
     - name: test lint
       shell: ansible-lint /tests/test.yml
       ignore_errors: true
       register: out
     
-    - name: sleep
-      shell: sleep 99999999
+  
 
 #    - debug:
 #        var: out
