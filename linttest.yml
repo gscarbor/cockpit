@@ -6,8 +6,5 @@
       ignore_errors: true
       register: out
       
-    - name: uptime
-      shell: ls . jjjj
-
 #    - debug:
 #        var: out
