@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: test lint
+    - name: test uptime
       shell: uptime
 #      register: out
 #    - debug:
