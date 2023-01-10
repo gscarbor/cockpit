@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: yum update system
+      ansible.builtin.yum:
+        name: 'kernel'
+        state: latest
+        update_cache: true
+    
